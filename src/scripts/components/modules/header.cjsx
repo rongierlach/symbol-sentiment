@@ -4,9 +4,12 @@ Bootstrap = require 'react-bootstrap'
 module.exports = React.createClass
   displayName: "Header"
 
+  search: ->
+    console.log 'search!'
+
   searchBtn: ->
     return(
-      <Button active="true" >
+      <Button onClick={@search}>
         Search
       </Button>
     )
