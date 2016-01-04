@@ -119,6 +119,7 @@ gulp.task "webpack-dev-server", (callback) ->
   # Start a webpack-dev-server.
   devServer = new WebpackDevServer(webpack(webpackConfig),
     contentBase: './' + paths.dest + '/'
+    historyApiFallback: true,
     hot: true
     options:
       watchOptions:
