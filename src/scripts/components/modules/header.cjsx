@@ -19,7 +19,7 @@ module.exports = React.createClass
     <Navbar className="navbar">
 
       <Navbar.Header pullLeft>
-        <Navbar.Brand>
+        <Navbar.Brand className="hide">
           <div className="logo"></div>
           <span className="light-grey brand-text">CMT</span>
         </Navbar.Brand>

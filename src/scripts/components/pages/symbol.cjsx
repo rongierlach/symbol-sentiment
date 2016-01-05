@@ -5,5 +5,5 @@ module.exports = React.createClass
   displayName: "Symbol"
   render: ->
     <div>
-      home {@props.params.symbol || 'no symbol given'}
+      Symbol: {@props.params.symbol.toUpperCase()}
     </div>
